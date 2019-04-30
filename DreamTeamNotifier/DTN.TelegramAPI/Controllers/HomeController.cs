@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DreamTeamNotifier.Models;
 
-namespace DreamTeamNotifier.Controllers
+// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+namespace DTN.TelegramAPI.Controllers
 {
+    [Route("/")]
     public class HomeController : Controller
     {
+        // GET: /<controller>/
         public string Index()
         {
             return "Hello world!";
