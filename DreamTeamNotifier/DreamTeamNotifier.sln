@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTN.TelegramAPI", "DTN.Tele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTN.Core", "DTN.Core\DTN.Core.csproj", "{62D0DD26-D6A7-4532-973F-D4274EC91C4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTN.CalendarAPI", "DTN.CalendarAPI\DTN.CalendarAPI.csproj", "{616BCBDF-1F65-435C-AA4F-15AC1D1F2C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{62D0DD26-D6A7-4532-973F-D4274EC91C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62D0DD26-D6A7-4532-973F-D4274EC91C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62D0DD26-D6A7-4532-973F-D4274EC91C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616BCBDF-1F65-435C-AA4F-15AC1D1F2C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616BCBDF-1F65-435C-AA4F-15AC1D1F2C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616BCBDF-1F65-435C-AA4F-15AC1D1F2C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616BCBDF-1F65-435C-AA4F-15AC1D1F2C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
