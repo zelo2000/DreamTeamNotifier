@@ -27,14 +27,20 @@ namespace DTN.TelegramAPI.Controllers
                 var commands = Bot.Commands;
                 var message = update.Message;
                 var botClient = await Bot.GetBotClientAsync();
-
+                bool checker = false;
                 foreach (var command in commands)
                 {
                     if (command.Contains(message))
                     {
                         await command.Execute(message, botClient);
+                        checker = true;
                         break;
                     }
+                }
+                if (!checker)
+                {
+                    var chatId = message.Chat.Id;
+                    await botClient.SendTextMessageAsync(chatId, "Wrong input.");
                 }
             }
             return Ok();
