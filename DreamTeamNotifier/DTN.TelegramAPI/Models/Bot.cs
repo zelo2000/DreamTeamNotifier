@@ -26,7 +26,9 @@ namespace DTN.TelegramAPI.Models
         {
             commandsList = new List<Command>
             {
-                new StartCommand()
+                new StartCommand(),
+                new CreateEventCommand(),
+                new AddEventCommand()
                 //TODO: Add more commands
             };
 
