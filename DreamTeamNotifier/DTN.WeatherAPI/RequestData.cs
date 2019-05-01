@@ -26,7 +26,7 @@ namespace DTN.WeatherAPI
                                 Console.WriteLine(data);
                                 //var serializer = new JsonSerializer();
                                 Response response = JsonConvert.DeserializeObject<Response>(data);
-                                Console.WriteLine(response.Weather[0].Main);
+                                return response;
                             }
                         }
                     }
@@ -36,6 +36,8 @@ namespace DTN.WeatherAPI
             {
                 Console.WriteLine(exception);
             }
+
+            return null;
         }
     }
 }
