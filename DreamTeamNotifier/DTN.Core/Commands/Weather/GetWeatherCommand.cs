@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
-namespace DTN.Core.Commands
+namespace DTN.Core.Commands.Weather
 {
     /// <summary>
-    /// Start command which implement command
+    /// Get weather command
     /// </summary>
-    public class StartCommand : Command
+    public class GetWeatherCommand : Command
     {
-        public override string Name => @"/start";
+        public override string Name => @"/get_weather";
 
         public override bool Contains(Message message)
         {
@@ -25,7 +25,8 @@ namespace DTN.Core.Commands
         public override async Task Execute(Message message, TelegramBotClient client)
         {
             var chatId = message.Chat.Id;
-            await client.SendTextMessageAsync(chatId, "Hello, I'm Dream Team notifier bot.");
+            await client.SendTextMessageAsync(chatId, "Please input location using special message");
         }
+
     }
 }

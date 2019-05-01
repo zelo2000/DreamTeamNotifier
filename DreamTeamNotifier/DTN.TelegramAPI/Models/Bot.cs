@@ -1,4 +1,5 @@
 ﻿using DTN.Core.Commands;
+using DTN.Core.Commands.Weather;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,9 @@ namespace DTN.TelegramAPI.Models
         {
             commandsList = new List<Command>
             {
-                new StartCommand()
+                new StartCommand(),
+                new GetWeatherCommand(),
+                new GetLocationCommand()
                 //TODO: Add more commands
             };
 
