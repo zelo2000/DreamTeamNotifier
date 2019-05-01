@@ -26,10 +26,10 @@ namespace DTN.TelegramAPI.Models
         {
             commandsList = new List<Command>
             {
-                new StartCommand()
+                new StartCommand(),
+                new LoginCommand()
                 //TODO: Add more commands
             };
-
         }
 
         /// <summary>
