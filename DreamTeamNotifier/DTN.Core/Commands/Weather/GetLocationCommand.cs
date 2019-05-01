@@ -4,6 +4,7 @@ using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using DTN.Core.Utility;
+using System;
 
 namespace DTN.Core.Commands.Weather
 {
@@ -26,11 +27,11 @@ namespace DTN.Core.Commands.Weather
             dynamic forecast = new WeatherRepository().GetWeather(location.Latitude, location.Longitude);
 
             var replyMessage = $"Whether in the <b>{forecast.name}</b>\n\n" +
-                $"temperature - <i>{forecast.main.temp}</i>\n" +
-                $"clouds - <i>{forecast.clouds.all}</i>\n" +
-                $"humidity - <i>{forecast.main.humidity}</i>\n" +
-                $"wind - <i>{forecast.wind.speed} {forecast.wind.deg}</i>\n" +
-                $"Pressure - <i>{forecast.main.pressure}</i>\n";
+                $"temperature - <i>{forecast.main.temp} degrees Celsius</i>\n" +
+                $"clouds - <i>{forecast.clouds.all} %</i>\n" +
+                $"humidity - <i>{forecast.main.humidity} %</i>\n" +
+                $"wind - <i>{forecast.wind.speed} m/s</i>\n" +
+                $"pressure - <i>{forecast.main.pressure} hPa</i>\n";
 
             Debug.WriteLine(replyMessage);
 
