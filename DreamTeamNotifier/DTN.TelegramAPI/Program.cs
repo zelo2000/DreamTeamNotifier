@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using DTN.WeatherAPI;
 
 namespace DTN.TelegramAPI
 {
@@ -14,6 +15,7 @@ namespace DTN.TelegramAPI
     {
         public static void Main(string[] args)
         {
+            RequestData.Request();
             CreateWebHostBuilder(args).Build().Run();
         }
 
