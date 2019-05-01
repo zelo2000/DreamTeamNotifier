@@ -27,7 +27,7 @@ namespace DTN.Core.Commands.Weather
             dynamic forecast = new WeatherRepository().GetWeather(location.Latitude, location.Longitude);
 
             var replyMessage = $"Whether in the <b>{forecast.name}</b>\n\n" +
-                $"temperature - <i>{forecast.main.temp} degrees Celsius</i>\n" +
+                $"temperature - <i>{forecast.main.temp} Kelvin degrees</i>\n" +
                 $"clouds - <i>{forecast.clouds.all} %</i>\n" +
                 $"humidity - <i>{forecast.main.humidity} %</i>\n" +
                 $"wind - <i>{forecast.wind.speed} m/s</i>\n" +
