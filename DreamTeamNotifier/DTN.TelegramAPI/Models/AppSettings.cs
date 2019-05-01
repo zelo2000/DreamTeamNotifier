@@ -11,8 +11,8 @@ namespace DTN.TelegramAPI.Models
     /// </summary>
     public static class AppSettings
     {
-        public static string Url { get; set; } = "https://dtntelegramapi20190430110017.azurewebsites.net/";
-        public static string Name { get; set; } = "dream_team_notifier_bot";
-        public static string Key { get; set; } = "801997150:AAFtMmPYZ_sYkpsADk09Gq7VD4KX6NVMi0o";
+        internal static string Url { get; } = "https://dtntelegramapi20190430110017.azurewebsites.net/";
+        internal static string Name { get; } = "dream_team_notifier_bot";
+        internal static string Key { get; } = "801997150:AAFtMmPYZ_sYkpsADk09Gq7VD4KX6NVMi0o";
     }
 }

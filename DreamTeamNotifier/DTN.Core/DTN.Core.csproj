@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="OpenWeatherMap" Version="1.1.0" />
     <PackageReference Include="Telegram.Bot" Version="14.11.0" />
   </ItemGroup>

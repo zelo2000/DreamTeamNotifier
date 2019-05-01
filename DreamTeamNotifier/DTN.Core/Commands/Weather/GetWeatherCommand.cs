@@ -7,6 +7,9 @@ using Telegram.Bot.Types;
 
 namespace DTN.Core.Commands.Weather
 {
+    /// <summary>
+    /// Get weather command
+    /// </summary>
     public class GetWeatherCommand : Command
     {
         public override string Name => @"/get_weather";
